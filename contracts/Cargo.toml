@@ -1,0 +1,40 @@
+[package]
+name = "swafe-contract"
+version = "0.1.0"
+edition = "2021"
+description = "Swafe allocation verification contracts for Partisia Blockchain"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[lib]
+crate-type = ['rlib', 'cdylib']
+
+[dependencies]
+# Partisia Blockchain dependencies
+pbc_contract_common = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+pbc_contract_codegen = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+pbc_traits = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+pbc_lib = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+read_write_rpc_derive = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+read_write_state_derive = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+create_type_spec_derive = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+pbc_zk = { git = "https://git@gitlab.com/partisiablockchain/language/contract-sdk.git", tag = "v.16.105.0" }
+
+# HTTP routing and JSON serialization
+matchit = "0.9.0"
+serde = { version = "1.0", default-features = false, features = [
+    "derive",
+    "alloc",
+] }
+swafe-lib = { path = "../lib" }
+swafe-api = { path = "../api" }
+serde-json-wasm = "1.0.1"
+
+[features] # Swafe library. Can't build with rand feature, which is part of the default feature.
+default = []
+abi = [
+    "pbc_contract_common/abi",
+    "pbc_contract_codegen/abi",
+    "pbc_traits/abi",
+    "create_type_spec_derive/abi",
+]

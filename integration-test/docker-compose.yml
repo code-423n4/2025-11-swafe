@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  execution-engine-1:
+    image: execution-engine-standalone:local
+    container_name: swafe-execution-engine-1
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./conf.json:/conf/server.json
+      - ./data-1:/app/data
+
+  execution-engine-2:
+    image: execution-engine-standalone:local
+    container_name: swafe-execution-engine-2
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./conf.json:/conf/server.json
+      - ./data-2:/app/data
+
+  execution-engine-3:
+    image: execution-engine-standalone:local
+    container_name: swafe-execution-engine-3
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./conf.json:/conf/server.json
+      - ./data-3:/app/data
+
+networks:
+  default:
+    name: swafe-network

@@ -1,0 +1,20 @@
+{
+    "restEndpointPort": "8001",
+    "readerNodeEndpoint": "https://reader.testnet.partisiablockchain.com",
+    "blockchainShards": 3,
+    "storagePath": "target/storage/reader",
+    "tcpReaderAddresses": [
+        "A/c9yYoOs0bvSF2MhTfg3tSi4DRDEMzVQmHhwJM1EmPz:reader.testnet.partisiablockchain.com:9938",
+        "A/c9yYoOs0bvSF2MhTfg3tSi4DRDEMzVQmHhwJM1EmPz:reader.testnet.partisiablockchain.com:9939",
+        "A/c9yYoOs0bvSF2MhTfg3tSi4DRDEMzVQmHhwJM1EmPz:reader.testnet.partisiablockchain.com:9940",
+        "A/c9yYoOs0bvSF2MhTfg3tSi4DRDEMzVQmHhwJM1EmPz:reader.testnet.partisiablockchain.com:9941"
+    ],
+    "transactionPrivateKey": "53ec93af106c5160bc842a69df2713395ae81b7d36f427461b2c11134fb6f9e",
+    "tcpNetworkPrivateKey": "53ec93af106c5160bc842a69df2713395ae81b7d36f427461b2c11134fb6f9e",
+    "engineNetworkTcpAddress": "localhost:8030",
+    "contractFilter": [
+        "0268a0d91b8bd1ed2f7e3812d60b421381e01e753e",
+        "02b5d9431f00d28b49987ff543527b2e5eee03554b",
+        "020c02ba30ea8596decde59bb9e7338a0eb0d8c016"
+    ]
+}

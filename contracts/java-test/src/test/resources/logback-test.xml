@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <!-- Suppress duplicate configuration warnings -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+    <!-- Console appender with [LEVEL] format -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%highlight([%level]) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Set log levels - DEBUG output suppressed by default -->
+    <!-- To enable debug output: mvn test -Dlogback.test.level=DEBUG -->
+    <logger name="com.partisia.blockchain.contract" level="${logback.test.level:-INFO}"/>
+    
+    <!-- Silence noisy loggers from dependency -->
+    <logger name="com.partisiablockchain.blockchain.ExecutedTransactionEvents" level="OFF"/>
+    <logger name="com.partisiablockchain.language.wasm.pbclib.HostedExit" level="OFF"/>
+    <logger name="com.secata.jarutil.Dependency" level="WARN"/>
+    <logger name="com.secata.jarutil.PomDependencies" level="WARN"/>
+    <logger name="com.partisiablockchain.blockchain.language.testorchestrator.exec.Cmd" level="ERROR"/>
+    <logger name="com.partisiablockchain.blockchain.MutableChainState" level="ERROR"/>
+    
+    <!-- Root logger configuration -->
+    <root level="${logback.root.level:-INFO}">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

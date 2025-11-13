@@ -1,0 +1,30 @@
+[package]
+name = "swafe-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "swafe-cli"
+path = "src/main.rs"
+
+[features]
+default = []
+
+[dependencies]
+swafe-lib = { path = "../lib" }
+swafe-api = { path = "../api" }
+
+# CLI dependencies
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+bincode = { version = "2.0", features = ["serde"] }
+
+# Random number generation
+rand = "0.8"
+
+# Arkworks for cryptography
+ark-std = { version = "0.5", features = ["std"] }
+

@@ -1,0 +1,65 @@
+[graph]
+targets = []
+
+all-features = true
+no-default-features = false
+
+[output]
+feature-depth = 1
+
+[advisories]
+ignore = [
+	"RUSTSEC-2024-0436", # "paste" deprecation
+]
+
+[licenses]
+allow = [
+    "MIT",
+	"BSD-3-Clause",
+    "Apache-2.0",
+	"Unicode-3.0",
+    "Apache-2.0 WITH LLVM-exception"
+]
+confidence-threshold = 0.8
+exceptions = [
+    { allow = ["Unlicense"], crate = "swafe-lib" },
+    { allow = ["Unlicense"], crate = "swafe-api" },
+]
+
+[[licenses.clarify]]
+name = "swafe-lib"
+version = "*"
+expression = "Unlicense"
+license-files = []
+
+[[licenses.clarify]]
+name = "swafe-api"
+version = "*"
+expression = "Unlicense"
+license-files = []
+
+[licenses.private]
+ignore = false
+registries = []
+
+[bans]
+multiple-versions = "warn"
+wildcards = "allow"
+highlight = "all"
+workspace-default-features = "allow"
+external-default-features = "allow"
+allow = []
+deny = []
+skip = []
+skip-tree = []
+
+[sources]
+unknown-registry = "warn"
+unknown-git = "warn"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []
+
+[sources.allow-org]
+github = []
+gitlab = []
+bitbucket = []
