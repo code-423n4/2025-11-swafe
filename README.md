@@ -43,6 +43,7 @@ The protocol implementation is based on the [Swafe Book](https://github.com/zkse
 - **Documentation:** https://github.com/swafe-io/swafe-book
 - **Website:** https://swafe.io/
 - **X/Twitter:** https://x.com/swafe_io
+- **Code walk-through:** https://youtu.be/FO2jbib8C7o
 
 ---
 
