@@ -215,6 +215,8 @@ The codebase was successfully compiled with the following dependencies on an Ubu
 - Just: 1.43.1
 - Partisia (`cargo-pbc`): 5.411.0
 
+To note, **the Java, Rust, and Partisia dependencies pertain to the Partisia contract system and are not related to the code of the project itself**.
+
 #### Installing Java & Apache Maven
 
 The codebase requires the JDK version `17` and upward to be able to run tests. For Unix-like systems, please install Java through your respective package manager, f.e.:
@@ -244,6 +246,8 @@ apt install just
 ```
 
 #### Partisia Contract Builder
+
+This section covers the installation of the Partisia Contract Builder, which can also be found at [this link](https://docs.partisia.com/platform/build-on/development-setup.html).
 
 For the system to compile, the `pbc` command must be available through the `cargo` Rust toolkit. To achieve this, the `cargo-partisia-contract` package must be installed. It depends on OpenSSL as well as the `pkg-config` packages:
 
