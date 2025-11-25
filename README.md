@@ -24,6 +24,10 @@ _Anything included in this section is considered a publicly known issue and is t
 
 Denial-of-Service attacks for HTTP endpoints are not considered in scope as HM issues, and should be submitted as part of a QA report.
 
+For clarity:
+- Volumetric attacks are considered out of scope
+- Panics in the handler are considered a minor issue (the HTTP server should return a 5xx in case of a crash, but not fall over). In other words, any issue of this kind would be considered Low severity at most.
+
 # Overview
 
 This Repository contains the Swafe library, which can be used as SDK for building Swafe-based clients, as well as for creating Swafe-based partisia contracts.
