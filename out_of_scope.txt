@@ -6,3 +6,5 @@
 ./app/swafe-lib/cli/src/commands/utils.rs
 ./app/swafe-lib/cli/src/commands/vdrf.rs
 ./app/swafe-lib/cli/src/main.rs
+./app/swafe-lib/lib/src/account/tests.rs
+./app/swafe-lib/lib/src/backup/tests.rs

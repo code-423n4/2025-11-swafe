@@ -87,12 +87,10 @@ The protocol implementation is based on the [Swafe Book](https://github.com/swaf
 |[contracts/src/lib.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/contracts/src/lib.rs)| 88 |
 |[contracts/src/storage.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/contracts/src/storage.rs)| 22 |
 |[lib/src/account/mod.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/account/mod.rs)| 112 |
-|[lib/src/account/tests.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/account/tests.rs)| 635 |
 |[lib/src/account/v0.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/account/v0.rs)| 646 |
 |[lib/src/association/mod.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/association/mod.rs)| 78 |
 |[lib/src/association/v0.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/association/v0.rs)| 628 |
 |[lib/src/backup/mod.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/backup/mod.rs)| 36 |
-|[lib/src/backup/tests.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/backup/tests.rs)| 450 |
 |[lib/src/backup/v0.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/backup/v0.rs)| 359 |
 |[lib/src/crypto/commitments.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/crypto/commitments.rs)| 283 |
 |[lib/src/crypto/curve.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/crypto/curve.rs)| 8 |
@@ -125,7 +123,9 @@ Any file that is not explicitly listed in the aforementioned list is considered 
 | File         |
 | ------------ |
 | [cli/\*\*.\*\*](https://github.com/code-423n4/2025-11-swafe/tree/main/cli) |
-| Totals: 8 |
+| [lib/src/account/tests.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/account/tests.rs) |
+| [lib/src/backup/tests.rs](https://github.com/code-423n4/2025-11-swafe/blob/main/lib/src/backup/tests.rs) |
+| Totals: 10 |
 
 *For a machine-readable version, see [out_of_scope.txt](https://github.com/code-423n4/2025-11-swafe/blob/main/out_of_scope.txt)*
 

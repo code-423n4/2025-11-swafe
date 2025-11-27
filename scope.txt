@@ -28,12 +28,10 @@
 ./app/swafe-lib/contracts/src/lib.rs
 ./app/swafe-lib/contracts/src/storage.rs
 ./app/swafe-lib/lib/src/account/mod.rs
-./app/swafe-lib/lib/src/account/tests.rs
 ./app/swafe-lib/lib/src/account/v0.rs
 ./app/swafe-lib/lib/src/association/mod.rs
 ./app/swafe-lib/lib/src/association/v0.rs
 ./app/swafe-lib/lib/src/backup/mod.rs
-./app/swafe-lib/lib/src/backup/tests.rs
 ./app/swafe-lib/lib/src/backup/v0.rs
 ./app/swafe-lib/lib/src/crypto/commitments.rs
 ./app/swafe-lib/lib/src/crypto/curve.rs
